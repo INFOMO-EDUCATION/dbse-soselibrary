@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        h1, h2, h3, h4 {
+            margin-top: 0;
+        }
+        
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 50px;
+            margin-right: 15px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav a {
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        /* Hero Section */
+        .subject-hero.cbse-hero {
+            background-color: #ecf0f1;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .subject-hero h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subject-hero p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+        
+        /* Subject Overview */
+        .subject-overview {
+            margin-bottom: 3rem;
+        }
+        
+        .subject-overview h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Category Grid */
+        .subject-categories h3,
+        .subject-highlights h3,
+        .subject-links h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .category-grid,
+        .highlight-grid,
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .category-card,
+        .highlight-card,
+        .link-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .category-card:hover,
+        .highlight-card:hover,
+        .link-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-card h4,
+        .highlight-card h4 {
+            margin-bottom: 0.5rem;
+            color: #1a5276;
+        }
+        
+        /* Highlight Cards */
+        .highlight-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+            background-color: #1a5276;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #154360;
+        }
+        
+        /* Quick Links */
+        .subject-links {
+            background-color: #f0f3f4;
+            padding: 2rem 0;
+        }
+        
+        .link-card {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: background-color 0.3s ease;
+        }
+        
+        .link-card i {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+            color: #2980b9;
+        }
+        
+        .link-card:hover {
+            background-color: #eaf2f8;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                margin-top: 1rem;
+            }
+        
+            .category-grid,
+            .highlight-grid,
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBSE Resources | SOSE Libraries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* All the same CSS as in the main file */
+        /* (Copy the entire style section from the main file here) */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/50" alt="SOSE Logo" class="logo">
+            <h1>SOSE Libraries</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#subjects">Subjects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="subject-hero dbse-hero">
+        <div class="subject-hero-content">
+            <h2>DBSE Resources</h2>
+            <p>Explore our comprehensive collection of Delhi Board of Secondary Education materials</p>
+        </div>
+    </section>
+
+    <section class="subject-content">
+        <div class="container">
+            <div class="subject-overview">
+                <h3>About DBSE Collection</h3>
+                <p>The Delhi Board of Secondary Education (DBSE) section of our library contains all the essential resources for students following this curriculum. Our collection is carefully curated to support students from Class 1 through Class 12.</p>
+                <p>We provide:</p>
+                <ul>
+                    <li>All prescribed textbooks for each class and subject</li>
+                    <li>Supplementary study materials and guides</li>
+                    <li>Previous years' question papers</li>
+                    <li>Model test papers and sample answers</li>
+                    <li>Subject-specific reference books</li>
+                </ul>
+                <p>Our DBSE collection is updated annually to ensure alignment with the latest curriculum changes and examination patterns. The materials are organized by class and subject for easy access.</p>
+            </div>
+
+            <div class="subject-categories">
+                <h3>Key Features of Our DBSE Collection</h3>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <h4>Textbooks</h4>
+                        <p>Complete set of prescribed textbooks for all classes (1-12) including:</p>
+                        <ul>
+                            <li>Mathematics</li>
+                            <li>Science (Physics, Chemistry, Biology)</li>
+                            <li>Social Studies</li>
+                            <li>Languages (English, Hindi, Sanskrit)</li>
+                            <li>Computer Science</li>
+                        </ul>
+                    </div>
+                    <div class="category-card">
+                        <h4>Exam Preparation</h4>
+                        <p>Resources to help students excel in board exams:</p>
+                        <ul>
+                            <li>10 years of solved question papers</li>
+                            <li>Model test papers with solutions</li>
+                            <li>Chapter-wise important questions</li>
+                            <li>Marking scheme and answer writing guides</li>
+                        </ul>
+                    </div>
+                    <div class="category-card">
+                        <h4>Supplementary Materials</h4>
+                        <p>Additional learning resources:</p>
+                        <ul>
+                            <li>Concept maps and quick revision guides</li>
+                            <li>Workbooks with practice problems</li>
+                            <li>Laboratory manuals for science subjects</li>
+                            <li>Sample projects and assignments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-highlights">
+                <h3>Popular DBSE Resources</h3>
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <img src="https://via.placeholder.com/150x200" alt="DBSE English Guide">
+                        <h4>DBSE English Master Guide</h4>
+                        <p>Comprehensive guide covering grammar, writing skills, and literature analysis with sample papers.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                    <div class="highlight-card">
+                        <img src="https://via.placeholder.com/150x200" alt="DBSE Mathematics Solved Papers">
+                        <h4>Mathematics Solved Papers (2013-2023)</h4>
+                        <p>Complete solutions for DBSE Mathematics papers from past 10 years with step-by-step explanations.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                    <div class="highlight-card">
+                        <img src="https://via.placeholder.com/150x200" alt="DBSE Science Practical Guide">
+                        <h4>Science Practical Handbook</h4>
+                        <p>Detailed procedures, diagrams, and observation tables for all prescribed practical experiments.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subject-links">
+        <div class="container">
+            <h3>Additional Resources</h3>
+            <div class="links-grid">
+                <a href="#" class="link-card">
+                    <i class="fas fa-book"></i>
+                    <span>DBSE Syllabus</span>
+                </a>
+                <a href="#" class="link-card">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Exam Pattern</span>
+                </a>
+                <a href="#" class="link-card">
+                    <i class="fas fa-question-circle"></i>
+                    <span>FAQs</span>
+                </a>
+                <a href="#" class="link-card">
+                    <i class="fas fa-download"></i>
+                    <span>Download Materials</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#subjects">Subjects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Subjects</h3>
+                <ul>
+                    <li><a href="dbse.html">DBSE</a></li>
+                    <li><a href="cbse.html">CBSE</a></li>
+                    <li><a href="reference.html">Reference Books</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 SOSE Libraries. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
